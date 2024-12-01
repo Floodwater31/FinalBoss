@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56d0c2b9161286646a3c59f8a82f1e3a, type: 3}
+  m_Name: RampageSkill
+  m_EditorClassIdentifier: 
+  skillName: Rampage
+  description: Deal 20 damage to all enemies
+  maxCooldown: 5
+  currentCooldown: 5
+  level: 1
+  skillUIInstance: {fileID: 0}
+  damage: 20
