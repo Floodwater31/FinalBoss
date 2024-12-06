@@ -1,4 +1,4 @@
- using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -36,6 +36,7 @@ public class FinalBoss : MonoBehaviour
     public List<TextMeshProUGUI> shopButtonCDs;
 
     public GameObject startRoundButton; // Assign in the Inspector
+
 
     
     [Header("Inscribed")]
@@ -367,4 +368,18 @@ void AssignSkillsToShopButtons()
         }
     }
 }
+
+public void DeleteCanvas(GameObject canvasToDelete)
+{
+    if (canvasToDelete != null)
+    {
+        Destroy(canvasToDelete);
+        Debug.Log($"Canvas {canvasToDelete.name} has been deleted.");
+    }
+    else
+    {
+        Debug.LogWarning("Canvas to delete is null!");
+    }
+}
+
 }
